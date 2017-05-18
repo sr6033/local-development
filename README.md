@@ -11,6 +11,12 @@ minikube start
 ```
 
 - Get your "user token" from https://beta.hasura.io/settings
+```
+curl \
+  -H 'Authorization: Bearer <beta.hasura.io user-token>' \
+  -d '{"ipaddr": "192.168.99.101"}' \
+  https://cloud.beta.hasura.io/v1/localdev
+```  
 
 - Get your minikube ip:
 ```
